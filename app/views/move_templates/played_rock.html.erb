@@ -1,0 +1,16 @@
+<% comp_move = ["rock", "paper", "scissors"].sample %>
+<% my_move = "rock" %>
+
+<h1>You played <%= my_move %></h1>
+
+<% if my_move == comp_move %>
+<%    result = "We tied!" %>
+<%  elsif my_move == "rock" && comp_move == "paper" || my_move == "paper" && comp_move == "scissors" || my_move == "scissors" && comp_move == "rock" %>
+<%    result = "We lost!" %>
+<%  elsif my_move == "paper" && comp_move == "rock" || my_move == "scissors" && comp_move == "paper" || my_move == "rock" && comp_move == "scissors" %>
+<%    result = "We won!" %>
+<%  end %>
+
+
+<h1>They played <%= comp_move %>!</h1>
+<h1><%= result%>!</h1>
