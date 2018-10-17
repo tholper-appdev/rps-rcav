@@ -1,7 +1,7 @@
 <% comp_move = ["rock", "paper", "scissors"].sample %>
 <% my_move = "scissors" %>
 
-<h1>You played <%= my_move %></h1>
+<h1>We played <%= my_move %></h1>
 
 <% if my_move == comp_move %>
 <%    result = "We tied!" %>
@@ -14,3 +14,5 @@
 
 <h1>They played <%= comp_move %>!</h1>
 <h1><%= result%>!</h1>
+
+<a href="/">Rules</a>
